@@ -9,176 +9,199 @@ html,body{
     height: 100%;
 }
 #back{
-
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
-#back video{
-    width: 100%;
-}
-#back #overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999999;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.397);
-}
-#overlay #nav{
+nav{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    color: white;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    /* background-color: #dadada; */
+    margin: 0 auto;
+
 }
-#links{
-    display: flex;
+nav img{
+    width: 110px;
 }
-#nav .ahover a{
-    text-decoration: none;
+#navri8{
+    justify-content: center;
+    
+}
+#navri8 a{
     margin-right: 40px;
-    color: white;
-    font-size: 13px;
-}
-#nav #brand #h1line{
-    width: 0%;
-    height: 3px;
-    border-radius: 100px;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
     
 }
-#links .ahover #home
+#navri8 a:nth-child(2){
+    opacity: .3;
+}
+#navri8 i{
+    margin-right: 40px;
+}
+#content
 {
-    font-weight: 700;
+    width: 90%;
+    height: 88%;
+    margin: auto;
 }
-#main{
-    display: flex;
-    flex-direction: column;
-    width: 43%;
-    height: 53%;
+#name{
+    width: 35%;
+    height: 30%; 
     position: absolute;
-    bottom: 5%;
-    left: 5%;
-    color: white;
-    align-items: center;
+    top: 30%; 
+    padding: 13px;
+   
+
 }
-#main h1 {
-    font-size: 55px;
-    margin-bottom: 15px;
-    
+#name h2 span{
+    color: rgb(170, 103, 233);
 }
 
-#main h6{
-    margin-left: -60px;
-}
-#main button{
-    padding:12px 20px;
-    border-radius: 100px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    margin-top: 20px;
-    margin-left: -190px;
+ .line{
+    width: 0px;
+    height: 6px;
+    background-color: black;
+    border-radius: 10px;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
-#links i{
-    display: none;
+#name:hover .line{
+    width: 300px;
+    background-color:rgb(201, 146, 252) ;
+
 }
-#cross{
-    width: 200px;
-    height: 200px;
+#p2 #head:hover .line{
+    width: 300px;
+    background-color:rgb(201, 146, 252) ;
+
+}
+#name h3{
+    font-size: 40px;
+}
+#name h1{
+    font-size: 80px;
+    color: rgb(172, 94, 245);
+    margin-bottom: 20px;
+}
+
+#mainimg{
+    width: 60%;
+    height: 80%;
+     
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 5%;
+    background-image: url(https://image.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg);
+    background-position: center;
+    background-size: cover;
 }
-#cross img{
-    width: 20px;
-    height: 20px;
-}
-#line1{
-    width: 50px;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    bottom: 0;
+#content{
     display: flex;
-    
-    flex-direction: column;
 
-    align-items: center;
 }
-#line11{
-    position: absolute;
-    right: 86%;
-    width: 1.5px;
+#p2
+{
+    width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#p2 #head{
+    width:400px;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+#p2 #head h1{
+    font-size: 45px;
 }
 
-#line22{
+
+
+#work{
+    width: 50%;
+    height: 50%;
+    top: 145%;
+    left: 50%;
     position: absolute;
-   bottom: 104%;
-    width: 100%;
-    height: 1px;
-    background-color: rgb(255, 255, 255);
+    transform: translate(-50%,-50%);
 }
-#line1 img{
-    margin-top: 40px;
-}
-#line2{
+#work img{
+    width: 600px;
+    height: 350px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).9s;
+}
+#work #one{
+    left:  20%;
+    top: 60%;
+    background-image: url(colors.jpeg) !important;
+    background-position: center;
+    background-size: contain;
+
+}
+#work #two{
+    top: 60%;
+    left: 50%;
+    z-index: 9999;
+    background-image: url(custom\ –\ 1.png) !important;
+    background-position: center;
+    background-size: contain;
+}
+#work #three{
+    left: 80%;
+    top: 60%;
+    background-image: url(nike.png) !important;
+    background-position: center;
+    background-size: contain;
+}
+#work img:hover{
+    transform: translate(-50%,-50%) scale(1.5);
+    z-index: 9999999999;
+    cursor: pointer;
+    width: 600px;
+    height: 350px;
+}
+#link{
     width: 100%;
-    height: 50px;
-    margin-top: 73%;
-    margin-right: -10%;
+    height: 100px;
     display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
+    padding: 10px 50px;
     
 }
-#line2 img{
-    margin-right: 25px;
+#link a{
+    width: 100px;
+    height: 80px;
+
+    font-size: 35px;
+    text-decoration: none;
 }
-#cross #line2 img:nth-child(1)
+#link a:nth-child(2)
 {
-    margin-left: 80px;
-    margin-right: 40px;
+    margin: 20px 70px;
 }
-#cross #line2 img:nth-child(3)
+#link a img{
+    width: 160px;
+    height: 70px;
+}
+#p3,#p4
 {
-    width: 40px;
-    height: 40px;
-}
-
-
-#main button:hover{
-    background-color: #fff;
-    color: black;
-    border: none;
-    font-size: 16px;
-    font-weight: 800;
-    padding:  14px 28px;
-}
-
-
-#nav #brand:hover #h1line{
     width: 100%;
-    background-color: #fff;
-}
-
-
-.aline{
-    width: 0%;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 100px;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
-}
-
-.ahover:hover .aline{
-    width: 55%;
+    height: 100%;
 }
 
 
@@ -187,50 +210,178 @@ html,body{
 
 
 
+#two{
+    width: 100%;
+   height: 100%;
+   background-color: #dadada;
+
+  }
+#two #upr
+{
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  margin-top: 20px;
+}
+#upr {
+  display: flex;
+  justify-content: center;
+
+}
+#upr #b1{
+  width:350px ;
+  height: 280px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  margin-right: 60px;
+}
+#upr #b1 h6{
+  margin-top: 20px;
+}
+#upr #b1 p{
+  margin-top: 30px;
+  margin-right: 60px;
+}
+
+#upr #b2    {
+  width:330px ;
+  height: 350px;
+  margin-top: 80px;
+  background-color: white;
+  box-shadow: 0px .2px 10px rgb(209, 207, 207);
+}
+
+#b2 input
+{
+  width: 80%;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  left: 50%;
+  transform: translate(12%,0);
+}
+#b2 button{
+  width: 80%;
+  height: 32px;
+  margin-top: 45px;
+  left: 50%;
+  transform: translate(12%,0);
+  background-color:rgb(172, 94, 245);
+  color: honeydew;
+  border: none;
+}
+#b2 #boxt{
+  height: 80px;
+}
+
+#two #dwn
+{
+  width: 100%;
+  height: 50%;
+  background-color: rgb(172, 94, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footerbox{
+  width: 80%;
+  height: 220px;
+  background-color: rgb(172, 94, 245);
+  align-items: center;
+
+}
+#footerbox #boxD{
+  display: flex;
+}
+#footerbox #boxD #headphone
+{
+  width:70%;
+  height: 170px;
+  padding: 20PX;
+  color: honeydew;
+  display: flex;
+
+}
+#text{
+    margin-left: 10px;
+}
+#text h4,h5,h1{
+    margin-top: 5px;
+}
 
 
 
+#photo{
+    width: 150px;
+    height: 150px;
+    background-image: url(https://pbs.twimg.com/profile_images/1155022290007891968/kLx3Cn4Y_400x400.jpg);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+#footerbox #boxD #headphone h6{
+  margin-top: 20PX;
+  opacity: .8;
+}
+#footerbox #boxD #headphone2
+{
+  width:45%;
+  height: 170px;
+  padding: 30px 20px;
+  color: honeydew;
 
+}
+#footerbox #boxD #headphone2 h6{
+  margin-top: 23px;
+  color: honeydew;
+  font-size: 15px;
+  opacity: .8;
+}
+#footerbox #boxD #headphone3
+{
+  width:30%;
+  height: 70px;
+  margin-top: 70px;
 
+}
 
-@media(max-width:450px){
-    #cross{
-        display: none;
-    }
-    #back video{
-        height: 100%;
-        width: initial;
-    }
-    #nav #links i{
-        display: initial;
-        color: white;
-        font-size: 20px;
-    }
-    #links .ahover{
-        display: none;
-    }
-    #overlay #nav
-    {
-        padding: 12px 15px;
-    }
-    #nav h1{
-        font-size: 20px;
-        padding: 2px 2px;
-    }
-    #main h1{
-        font-size: 25px;
-    }
-    #main{
-         bottom: 5%;
-         width: 70%;
-    }
-    #main h6{
-        font-size: 8px;
-        margin-left: 0;
-        font-weight: 500;
-    }
-    #main button{
-        margin-right: -50px;
-        padding: 7px 15px;
-    }
+#headphone3 i{
+  font-size: 40px;
+  margin-left: 20px;
+  padding-left: 22px;
+  color: honeydew;
+  opacity: .8;
+}
+#footerbox #bline{
+  width: 80%;
+  height: 40px;
+  margin-left: 10%;
+
+}
+#bline #links 
+
+{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+
+}
+#bline #links a {
+  
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+#bline h5
+{
+  margin-top: 20px;
+  color: honeydew;
+  position: absolute;
+  top: 387%;
+  left: 50%;
+  transform: translate(-50%,250%);
+  opacity: .8;
 }
